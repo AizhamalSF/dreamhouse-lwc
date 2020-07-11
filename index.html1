@@ -1,0 +1,10 @@
+<script>
+function room(roomType, resortFee, taxes){
+  return (roomType + resortFee) * taxes;
+}
+function costOfRoom (roomType, resortFee, taxes){
+  return room (roomType, resortFee, taxes) * 3;
+}
+const totalCost = costOfRoom (200, 35, 1.125);
+console.log(totalCost)
+</script>

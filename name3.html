@@ -1,0 +1,33 @@
+
+    <script>
+        let resume = {
+            Certifications: ['Admin ', 'AppBuilder ','PD1'],
+            Experience: [
+                {
+                    title : 'ESL instructor',
+                    startDate : 2008,
+                    endDate : 2010,
+                    salaryp : '80k',
+                    duration : function() {
+                        return this.endDate - this.startDate;
+                    }
+                },
+                {
+                    title : 'Reservations Agent',
+                    startDate : 2010,
+                    endDate : 2014,
+                    salary : '100k',
+                    duration : function() {
+                        return this.endDate - this.startDate;
+                    }
+                }
+            ],
+            Education: ['BA in Education', 'MA in Education'],
+            Hi: function (){
+                console.log( 'My name is Assem. I have '+this.Certifications+'.')
+            }
+        }
+        resume.Hi();
+        resume.Experience[0].duration();
+        console.log(resume.Experience[0].duration());
+        </script>

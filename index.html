@@ -37,6 +37,24 @@ if(BMIJohn > BMIMark){
  
 var result = 'Mike';  
  document.getElementById("result").innerHTML = result;
+
+ let obj={
+     name: 'John',
+     age=25,
+     isMarried:false
+ };
+ console.log(obj.name)
+
+ let resume ={
+     Certifications:['admin','Appbuilder','PD1'],
+     Experience:['administrator','developer'],
+     education:['BA in Law','LLM'],
+     Hi: function () {
+console.log('I have' + this.Certifications);
+     }
+
+     }
+resume.hi();
  
 
 }
